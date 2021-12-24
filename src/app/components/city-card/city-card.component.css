@@ -1,0 +1,23 @@
+.wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:8px;
+    border:1px solid black;
+    margin:32px 0px;
+    padding:16px;
+    gap:24px;
+    font-size:24px;
+    font-weight:600;
+    height:60px;
+   cursor:pointer;
+}
+
+.wrapper > span:first-child{
+    flex:1
+}
+
+
+.img-wrapper > img{
+    width:48px;
+}

@@ -1,0 +1,21 @@
+.details-wrapper{
+    height:50vh;
+    margin-top:32px;
+    overflow: auto;
+}
+
+.select-wrapper{
+    width:300px;
+}
+
+.select-wrapper > label {
+    font-weight:600;
+}
+
+.select-wrapper > select { 
+    margin-top:16px;
+}
+
+.select { 
+    margin-top:8px;
+}

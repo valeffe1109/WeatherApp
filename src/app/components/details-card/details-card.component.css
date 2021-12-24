@@ -1,0 +1,19 @@
+.details-wrapper{
+    border:1px solid black;
+    border-radius:8px;
+    height:80px;
+    padding:24px;
+    margin:32px 0px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details-wrapper > span:first-child{
+    font-size: 24px;
+    font-weight:600;
+}
+
+.details-wrapper > span{
+    font-size:24px;
+}

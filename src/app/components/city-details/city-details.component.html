@@ -1,0 +1,11 @@
+<a routerLink="/">Indietro</a>
+<h1>{{cityName}}</h1>
+<div class="select-wrapper">
+    <label>Seleziona un giorno</label>
+    <ng-select [items]="days" [(ngModel)]="selectedDay" class="select" (change)="filterDetails()">
+    </ng-select>
+</div>
+
+<div class="details-wrapper">
+    <app-details-card *ngFor="let item of details" [details]='item'></app-details-card>
+</div>

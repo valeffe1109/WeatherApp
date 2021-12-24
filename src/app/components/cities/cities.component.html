@@ -1,0 +1,4 @@
+<app-searchbar (onSearchCity)="searchCity($event)"></app-searchbar>
+<div class="cities-wrapper">
+    <app-city-card *ngFor="let city of cities" [city]='city' routerLink="/city/{{city?.name}}"></app-city-card>
+</div>

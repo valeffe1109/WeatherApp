@@ -1,0 +1,33 @@
+.form-control{
+    display:flex;
+    gap:8px;
+    flex-direction: column;
+}
+
+.form-control > label{
+    font-weight:600
+}
+
+.form-control > div{
+    display:flex;
+    gap:8px;
+}
+
+.form-control > div > input:first-child{ 
+ width:400px;
+ min-height:40px;
+ border-radius:8px;
+ border:1px solid black;
+}
+
+.btn { 
+    border-radius:8px;
+    border:unset;
+}
+
+.btn-block{
+    background-color:#67C6BB;
+    color:white;
+    width:80px;
+    cursor:pointer;
+}

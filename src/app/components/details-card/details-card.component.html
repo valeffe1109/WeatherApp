@@ -1,0 +1,16 @@
+<div class="details-wrapper">
+  <span>
+    {{details.dt_txt}}
+  </span>
+  <span>
+    {{details.main.temp}}°
+  </span>
+  <span>
+    <div class="img-wrapper">
+      <img src="https://openweathermap.org/img/wn/{{details.weather[0].icon}}@2x.png" />
+    </div>
+  </span>
+  <span>
+    {{details.weather[0].description}}
+  </span>
+</div>
