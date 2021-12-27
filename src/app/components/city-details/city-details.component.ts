@@ -16,7 +16,7 @@ export class CityDetailsComponent implements OnInit {
   details: WeatherDetails[] = [];
   tmp: WeatherDetails[] = [];
   currentDate = moment().format('DD');
-  days: number[] = [];
+  days: string[] = [];
   selectedDay: string = '';
   cityName: string = this.route.snapshot.paramMap.get('cityName')!;
   constructor(private cityService: CityService, private route: ActivatedRoute) { }
@@ -35,7 +35,7 @@ export class CityDetailsComponent implements OnInit {
 
   getDays() {
     while (this.days.length < 6) {
-      this.days.push(parseInt(this.currentDate) + this.days.length)
+      this.days.push(moment().add(this.days.length,'days').format('DD'))
     }
   }
 
